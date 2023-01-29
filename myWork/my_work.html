@@ -1,0 +1,118 @@
+<!DOCTYPE html><!--Deklarerar att dokumentet är en webbsida-->
+<html lang="en"> <!--Språkattribut - mycket viktigt för tillgänglighet-->
+
+<head><!--Alla viktiga länkar -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--För att få kompatibilitet på mobilskärmar -->
+    <meta name="work Alina Vaittinen" content="portfolio"><!--Lade till metataggar för SEO -->
+    <meta name="keywords" content="HTML, CSS, portfolio, UX">
+    <meta name="author" content="Alina">
+    <link rel="stylesheet" href="my_work.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04afbe8c03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script.js"></script>
+    <title>My Work</title>
+    <!--Titeln på sidan som syns i webbläsarfönstret. Inget annat i headelementet syns förutom titeln -->
+</head>
+
+<body><!--Allt innehåll inuti body -->
+    <header>
+        <nav><!--Navigationsbar inom <nav> för tillgänglighet.-->
+                <div class="topnav" id="myTopnav">
+                <a href="/">Home</a>
+                <a href="my_work.html" class="active">My Work</a>
+                <a href="#aboutMe">About me</a>
+                <a href="#contact">Contact</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Dropdown
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+            
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+
+        </nav>
+    </header>
+    <main>
+        <!--Behållare för att gruppera element som hör ihop -->
+        <h1>My work</h1><!--Huvudrubrik -->
+        <h2>School projects</h2>
+
+        <section>
+            <section class="project-container">
+                <img src="../images/Filmia.jpg" alt="Bild på fyra olika skärmar i filmapp">
+                <h3>Case study "Filmia"</h3><!--Underrubrik -->
+                <p>A movie app for a delightful movie experience, at your preferred speed.</p><!--Paragraf med text -->
+            </section>
+            <section class="project-container">
+                <img src="../images/foodApp.jpg" alt="Bild på fyra aolika mobilskärmar">
+
+                <h3>Case study "Fast Lunch"</h3>
+                <p>A fast food app with simple design and easy use.</p>
+            </section>
+            <section class="project-container">
+                <img src="../images/dummyProjekt.jpg" alt="Bild på mobil">
+
+                <div class="project-details-container">
+                    <h2>(Fake project) Overview</h2>
+                    <p>Interdum facilisis risus lobortis a quam vitae tristique. Eu aliquet turpis sed dignissim et
+                        faucibus
+                        quisque enim sed.
+                        Purus erat dolor sed integer aliquam nisl ut condimentum vestibulum.</p>
+                    <!--Dummytext i paragraf -->
+                    <div class="project-details">
+                        <div>
+                            <h3>Background</h3>
+                            <p>Mollis sit habitasse at feugiat urna faucibus etiam volutpat maecenas. Massa diam
+                                commodo at
+                                montes aliquet nulla scelerisque eget. At ipsum lobortis tincidunt magna at. Feugiat
+                                viverra aliquet sit
+                                ipsum justo pretium morbi.</p>
+                            <h4>Problem space</h4>
+                            <p>Mollis sit habitasse at. At ipsum lobortis tincidunt magna at.</p>
+                            <h4>Guiding questions</h4>
+                            <p>Mollis sit habitasse at. At ipsum lobortis tincidunt magna at.</p>
+                        </div>
+                        <div>
+                            <h3>Process</h3>
+                            <p>Morbi pretium lacus llentesque arcu.
+                                Tempus eget urna eu ornare amet euismod. Diam enim egestas tellus lectus cursus a neque
+                                mattis
+                                suspendisse. Neque dignissim aliquet bibendum
+                                parturient faucibus vitae odio lorem enim. Justo auctor quam aliquam platea.</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+        </section>
+
+
+    </main>
+    <footer><!--Footerelement i slutet på varje sida -->
+
+        <p><strong>Author: Alina Vaittinen, 2023</strong></p>
+        <div id="footer-icons">
+            <p><i class="fa-sharp fa-solid fa-envelope"></i> Mail </p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i> Phone </p>
+
+
+            <p><i id="linkedin" class="fa-brands fa-linkedin"></i> LinkedIn</p>
+            <p><i id="drib" class="fa-brands fa-dribbble"></i> Dribbble</p>
+            <p><i id="insta" class="fa-brands fa-instagram"></i> Instagram</p>
+        </div>
+
+    </footer>
+</body> <!--Slut på allt innehåll -->
+
+</html>
