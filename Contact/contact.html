@@ -1,0 +1,103 @@
+<!DOCTYPE html><!--Deklarerar att dokumentet är en webbsida-->
+<html lang="en"><!--Språkattribut - mycket viktigt för tillgänglighet-->
+
+<head><!--Alla nödvändiga länkar -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--För att få kompatibilitet på mobilskärmar -->
+    <meta name="contact Alina Vaittinen" content="portfolio"><!--Lade till metataggar för SEO -->
+    <meta name="keywords" content="HTML, CSS, portfolio, UX">
+    <meta name="author" content="Alina">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04afbe8c03.js" crossorigin="anonymous"></script>
+   
+    <title>Contact</title> <!--Namn på sidan --><!--Syns i webbläsarfönstret. Inget annat i headelementet syns förutom titeln -->
+</head>
+
+<body><!--Allt innehåll inuti body -->
+    <header>
+       <nav>
+         <!--Navigationsbar inom <nav> för tillgänglighet, landmark. Ingen sticky position på denna sida för man ska ha formuläret
+            synligt. -->
+            <div class="topnav" id="myTopnav">
+                <a href="../index.html">Home</a>
+                <a href="../myWork/my_work.html">My Work</a>
+                <a href="../aboutMe/about.html">About me</a>
+                <a href="contact.html" class="active">Contact</a>
+              
+                <a id="hamburger" href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+         
+        
+        </nav>
+    </header>
+    <main>
+    <div id="form-container"><!--Divbehållare för att gruppera element som hör ihop -->
+        <h1 id="rubrik">Contact Me!</h1><!--Huvudrubrik, endast en per sida-->
+
+        <!--Kontaktformulär -->
+        
+        <form name ="myForm" action="/action_page.php" method="get" onsubmit="validateForm()" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="message">Message*:</label>
+            <textarea id="message" required name="message" rows="4" cols="50" placeholder="Type your message here"></textarea>
+
+            <label for="email">Email*:</label>
+            <input type="email" id="email" name="Email" required placeholder="Enter a valid email address">
+            <input type="submit" value="Submit message">
+        </form>
+        <!--För att få avstånd mellan dessa gjorde jag margin-top på Kontakt-->
+    </div>
+    <div id="kontakt">
+        <button
+            class="contact-btn"><!--Två knappar för antingen mejla eller ringa, obs har inte lagt in telefonnummer -->
+            <i class="fa-sharp fa-solid fa-envelope"></i><a href="mailto:alina.vaittinen@gmail.com"> Mail</a>
+
+        </button>
+
+        <button class="contact-btn">
+            <i class="fa-sharp fa-solid fa-phone"></i>
+            <span>Phone</span>  
+        </button>
+
+
+    </div>
+
+    <!--Andra sätt att nå mig via sociala medier -->
+    <h4 id="social-media-headline">Social media</h4>
+    <div id="treMedier">
+        <p><i id="linked" class="fa-brands fa-linkedin"></i> LinkedIn</p>
+
+        <span>
+            <i id="dribb" class="fa-brands fa-dribbble"></i>
+            Dribbble
+        </span>
+        <p><i id="instagram" class="fa-brands fa-instagram"></i> Instagram</p>
+
+
+    </div>
+</main>
+    <footer>
+
+        <p><strong>Author: Alina Vaittinen, 2023</strong></p>
+        <div id="footer-icons">
+            <p><i class="fa-sharp fa-solid fa-envelope"></i> Mail </p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i> Phone </p>
+
+
+            <p><i id="linkedin" class="fa-brands fa-linkedin"></i> LinkedIn</p>
+            <p><i id="drib" class="fa-brands fa-dribbble"></i> Dribbble</p>
+            <p><i id="insta" class="fa-brands fa-instagram"></i> Instagram</p>
+        </div>
+
+    </footer>
+    <script src="contact.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

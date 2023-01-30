@@ -84,7 +84,11 @@
     display: block;
   }
 
-  
+  body {
+    font-family: "Sofia Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
   /*When the screen is less than 576 pixels wide, hide all links, except for the first one ("Home"). The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 576px) {
