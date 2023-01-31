@@ -12,7 +12,11 @@ header{
   #rubrik{
     justify-content: center;
   }
-  
+  /* #darkMode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
   
   #kontakt {
     margin-top:2.2rem;

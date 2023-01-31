@@ -171,8 +171,19 @@
   img{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
-
- 
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  #darkMode {
+    width: 1.25rem, 1.75rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: #80daa8;
+    font-family: "Sofia Sans", sans-serif;
+    }
 
   @media screen and (max-width: 576px) {
    

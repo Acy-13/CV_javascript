@@ -6,6 +6,8 @@ body{
 
 }
 
+
+
 main{
     display: flex;
     flex-direction: column;
@@ -55,3 +57,4 @@ img {
 .project-details div {
  width: 400px;
 }
+

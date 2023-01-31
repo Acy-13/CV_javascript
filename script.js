@@ -8,11 +8,15 @@ function myFunction() {
   }
 
 
-const colors = ['red', 'orange', 'yellow', 'lightgreen', 'blue'];
-const spans = document.querySelectorAll("span");
+// const colors = ['red', 'orange', 'yellow', 'lightgreen', 'blue'];
+// const spans = document.querySelectorAll("span");
 
-for(let i =0; i<spans.length; i++){
+// for(let i =0; i<spans.length; i++){
     
-    spans[i].style.color=colors[i];
+//     spans[i].style.color=colors[i];
+
+
+function switchMode() {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
 }
-console.log("Är ni här allihopa?")

@@ -136,6 +136,7 @@ section p, h2, h3{
 
 
 
+
 @media (width <= 576px) {
   .hero-title {
     font-size: 2rem;
@@ -147,9 +148,7 @@ section p, h2, h3{
     font-weight: 100;
     margin-top: 1rem;
   }
-  main{
-    
-  }
+
   .projects{
     filter: brightness(80%);
   }
