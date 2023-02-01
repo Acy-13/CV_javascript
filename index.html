@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!--Titel på denna sida--><!--Titeln som syns i webbläsarfönstret. Inget annat i headelementet syns förutom titeln -->
-    <title>Home</title>
+    <title>Home</title><!--Titeln beskriver förstasidan-->
     <!--Alla länkar dokumentet hänvisar till lägg här i head-->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="common.css">
@@ -27,8 +27,7 @@
 
 
 <body><!--Allt innehåll inuti body -->
-    <header><!--Navigationsbar med länkar till andra sidor jag gjort inom <nav> för tillgänglighet, landmark. Sticky position ungefär halvvägs,
-        så man hinner se var man är och kan byta sida-->
+    <header><!--Navigationsbar med länkar till andra sidor jag gjort inom <nav> för tillgänglighet, landmark.-->
         <nav>
         <div class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
@@ -49,13 +48,10 @@
         <section class="hero">
 
             <div class="hero-content">
-
-                <h1 class="hero-title"> <!--Huvudrubrik, använd endast en h1 per sida -->
-                    Welcome to  <span>A</span>
-                    <span>L</span>
-                    <span>I</span>
-                    <span>N</span>
-                    <span>A</span> Vaittinen's page
+                <p>Today is <span id="dateTime"></span></p>
+                <h1 class="hero-title"> <!--Huvudrubrik, använd endast en h1 per sida, det är semantisk html att dela in innehållet i olika delar, som jag gjort med 
+                    header, nav, main och footer-->
+                    Welcome to Alina Vaittinen's page
                 </h1>
 
                 <h2 class="hero-subtitle"><!--Rubrik lite lägre hieraki än h1-->

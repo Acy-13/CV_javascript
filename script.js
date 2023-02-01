@@ -6,6 +6,8 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+  var dt = new Date();
+document.getElementById("dateTime").innerHTML = dt.toLocaleString();
 
 
 // const colors = ['red', 'orange', 'yellow', 'lightgreen', 'blue'];
