@@ -15,10 +15,36 @@ function myFunction() {
     
 //     spans[i].style.color=colors[i];
 
+let isLightMode = true;
+
+const darkAndLightModeColors = {
+  "light": {
+    "normal" : "black",
+    "info" : '#A8F0B7',
+  },
+  "dark": {
+    "normal" : "white",
+    "info" : 'white',
+  }
+}
+
 //Dark mode-knapp
 function switchMode() {
-  let element = document.body;
+  const root = document.querySelector(":root");
+  if(isLightMode)
+  {
+    root.style.setProperty('--normal-text', darkAndLightModeColors.dark.normal);
+    root.style.setProperty('--info-box-text-color', darkAndLightModeColors.dark.info);
+
+  }
+  else
+  {
+    root.style.setProperty('--normal-text', darkAndLightModeColors.light.normal);
+    root.style.setProperty('--info-box-text-color', darkAndLightModeColors.light.info);
+  }
+  const element = document.body;
   element.classList.toggle("dark-mode");
+  isLightMode = !isLightMode
 }
 
 //Opacititet på footer-ikonerna, försvinner lätt och kommer tillbaka

@@ -12,11 +12,6 @@ header{
   #rubrik{
     justify-content: center;
   }
-  /* #darkMode{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
   
   #kontakt {
     margin-top:2.2rem;
@@ -126,9 +121,24 @@ header{
       align-content: center;
       
   }
+  @media only screen and (min-width: 768px){
+    
+    #form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+  }
+     
+  button{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    
+  }
   
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 992px){
     #form-container {
       display: flex;
       flex-direction: column;

@@ -29,7 +29,7 @@ body{
       justify-content: center;
       align-items: center;
       text-align: center;
-      color:#A8F0B7;
+      color:var(--info-box-text-color);
       font-size: large;
       padding-bottom: 3rem;
       
@@ -93,4 +93,17 @@ body{
     }
   
   
+  }
+  @media only screen and (min-width: 768px){
+    main {
+      flex-direction: row;
+    }
+    #info-box {
+      min-width: 30%;
+    }
+    #alina{
+      font-size: 1.75rem;
+      align-self: center;
+    }
+
   }
