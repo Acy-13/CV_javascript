@@ -1,3 +1,4 @@
+const root = document.querySelector(":root");
 const sectionParts = document.querySelectorAll('.section-part')
 
 
@@ -30,7 +31,7 @@ const darkAndLightModeColors = {
 
 //Dark mode-knapp
 function switchMode() {
-  const root = document.querySelector(":root");
+  
   if(isLightMode)
   {
     root.style.setProperty('--normal-text', darkAndLightModeColors.dark.normal);
