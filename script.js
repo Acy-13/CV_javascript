@@ -1,3 +1,6 @@
+const sectionParts = document.querySelectorAll('.section-part')
+
+
 function myFunction() {
     let x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -8,27 +11,20 @@ function myFunction() {
   }
 
 
-
-
-// const colors = ['red', 'orange', 'yellow', 'lightgreen', 'blue'];
-// const spans = document.querySelectorAll("span");
-
-// for(let i =0; i<spans.length; i++){
-    
-//     spans[i].style.color=colors[i];
-
 let isLightMode = true;
 
 const darkAndLightModeColors = {
   "light": {
     "normal" : "black",
     "info" : '#A8F0B7',
-    "sectionDiv": "#b5d9f8"
+    "sectionDiv": "#b5d9f8",
+    "sectionPart": "linear-gradient(90deg, rgb(125, 123, 156) 0%, rgba(88,135,124,1) 35%, rgb(76, 180, 200) 100%)"
   },
   "dark": {
     "normal" : "white",
     "info" : 'white',
-    "sectionDiv": "black"
+    "sectionDiv": "black",
+    "sectionPart": "black"
   }
 }
 
@@ -40,13 +36,14 @@ function switchMode() {
     root.style.setProperty('--normal-text', darkAndLightModeColors.dark.normal);
     root.style.setProperty('--info-box-text-color', darkAndLightModeColors.dark.info);
     root.style.setProperty('--section-div-background', darkAndLightModeColors.dark.sectionDiv);
-
+    sectionParts.forEach(x => x.style.background = darkAndLightModeColors.dark.sectionPart)
   }
   else
   {
     root.style.setProperty('--normal-text', darkAndLightModeColors.light.normal);
     root.style.setProperty('--info-box-text-color', darkAndLightModeColors.light.info);
     root.style.setProperty('--section-div-background', darkAndLightModeColors.light.sectionDiv);
+    sectionParts.forEach(x => x.style.background = darkAndLightModeColors.light.sectionPart)
   }
   const element = document.body;
   element.classList.toggle("dark-mode");
