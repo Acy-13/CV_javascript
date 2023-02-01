@@ -56,22 +56,22 @@ function switchMode() {
 //Opacititet på footer-ikonerna, försvinner lätt och kommer tillbaka
 let footerIcons = document.getElementById("footer-icons");
 
-let opac = 0.1;
+let opacity = 0.1;
 let opacup=true;
 renderLoop();
 
       function renderLoop() {
         setTimeout(function() {
           if(opacup==true)
-             {opac+=0.1;
-              if(opac>=1)opacup=false;
+             {opacity+=0.1;
+              if(opacity>=1)opacup=false;
              }
          if(opacup==false)
-             {opac-=0.1;
-              if(opac<=0.3) opacup=true;
+             {opacity-=0.1;
+              if(opacity<=0.3) opacup=true;
              }
  
-        footerIcons.style.opacity = opac;
+        footerIcons.style.opacity = opacity;
        
        window.requestAnimationFrame(renderLoop); 
         },300);
