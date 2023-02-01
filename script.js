@@ -6,8 +6,8 @@ function myFunction() {
       x.className = "topnav";
     }
   }
-  var dt = new Date();
-document.getElementById("dateTime").innerHTML = dt.toLocaleString();
+
+
 
 
 // const colors = ['red', 'orange', 'yellow', 'lightgreen', 'blue'];
@@ -50,7 +50,7 @@ function switchMode() {
 }
 
 //Opacititet på footer-ikonerna, försvinner lätt och kommer tillbaka
-let foelm = document.getElementById("footer-icons");
+let footerIcons = document.getElementById("footer-icons");
 
 let opac = 0.1;
 let opacup=true;
@@ -67,7 +67,7 @@ renderLoop();
               if(opac<=0.3) opacup=true;
              }
  
-        foelm.style.opacity = opac;
+        footerIcons.style.opacity = opac;
        
        window.requestAnimationFrame(renderLoop); 
         },300);
