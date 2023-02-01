@@ -23,10 +23,12 @@ const darkAndLightModeColors = {
   "light": {
     "normal" : "black",
     "info" : '#A8F0B7',
+    "sectionDiv": "#b5d9f8"
   },
   "dark": {
     "normal" : "white",
     "info" : 'white',
+    "sectionDiv": "black"
   }
 }
 
@@ -37,12 +39,14 @@ function switchMode() {
   {
     root.style.setProperty('--normal-text', darkAndLightModeColors.dark.normal);
     root.style.setProperty('--info-box-text-color', darkAndLightModeColors.dark.info);
+    root.style.setProperty('--section-div-background', darkAndLightModeColors.dark.sectionDiv);
 
   }
   else
   {
     root.style.setProperty('--normal-text', darkAndLightModeColors.light.normal);
     root.style.setProperty('--info-box-text-color', darkAndLightModeColors.light.info);
+    root.style.setProperty('--section-div-background', darkAndLightModeColors.light.sectionDiv);
   }
   const element = document.body;
   element.classList.toggle("dark-mode");
