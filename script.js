@@ -21,7 +21,7 @@ const darkAndLightModeColors = {
     "sectionDiv": "#b5d9f8",
     "projectContainer":"#e0fae6",
     "projectDetails":"#e0fae6",
-    "sectionPart": "linear-gradient(90deg, rgb(125, 123, 156) 0%, rgba(88,135,124,1) 35%, rgb(76, 180, 200) 100%)"
+    "sectionPart": "linear-gradient(90deg, rgb(125, 123, 156) 0%, rgba(88,135,124,1) 35%, rgb(76, 180, 200) 100%)",
   },
   "dark": {
     "normal" : "white",

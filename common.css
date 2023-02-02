@@ -4,12 +4,12 @@
   --normal-text: black;
 
   --section-div-background: #b5d9f8;
-
+  --navbar: #f0f8ff;
 }
 
 
 .topnav {
-    background-color: aliceblue;
+    background-color: var(--navbar);
     overflow: hidden;
   }
   

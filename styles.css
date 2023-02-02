@@ -57,6 +57,16 @@ p{
    
 }
 
+#myLuck{
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 1rem; 
+  background-color: #80daa8;
+  cursor: pointer;
+  font-weight: bolder;
+  border: none;
+  
+}
+
 main{
     font-size: 1rem;
     font-family: 'Sofia Sans', sans-serif;
