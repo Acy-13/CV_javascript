@@ -41,6 +41,8 @@ img {
   flex-direction: column;
   width: 80%;
   align-self: center;
+
+ 
 }
 
 .project-details-container h2{
@@ -52,6 +54,7 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .project-details div {

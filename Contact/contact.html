@@ -4,7 +4,9 @@
 <head><!--Alla nödvändiga länkar -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--För att få kompatibilitet på mobilskärmar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--För att få kompatibilitet på mobilskärmar.
+    WCAG 1.4.10 layout som fungerar vid förstoring eller liten skärm,
+        går att förstora i mobilläge och desktop-->
     <meta name="contact Alina Vaittinen" content="portfolio"><!--Lade till metataggar för SEO -->
     <meta name="keywords" content="HTML, CSS, portfolio, UX">
     <meta name="author" content="Alina">
@@ -18,10 +20,9 @@
 </head>
 
 <body><!--Allt innehåll inuti body -->
-    <header>
+    <header><!-- header, nav, main och footer - Semantisk html -->
        <nav>
-         <!--Navigationsbar inom <nav> för tillgänglighet, landmark. Ingen sticky position på denna sida för man ska ha formuläret
-            synligt. -->
+         <!--Navigationsbar inom <nav> för tillgänglighet, landmark. -->
             <div class="topnav" id="myTopnav">
                 <a href="../index.html">Home</a>
                 <a href="../myWork/my_work.html">My Work</a>
