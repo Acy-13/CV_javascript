@@ -59,11 +59,13 @@ p{
 
 #myLuck{
   font-family: "Sofia Sans", sans-serif;
-  font-size: 1rem; 
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem; 
   background-color: #80daa8;
-  cursor: pointer;
   font-weight: bolder;
   border: none;
+  cursor: pointer;
+  box-shadow: #EBB7E1 0 0 10px 6px;
   
 }
 
@@ -159,7 +161,7 @@ section p, h2, h3{
     margin-top: 1rem;
   }
 
-  .projects{
+  .projects, #myLuck {
     filter: brightness(80%);
   }
   
