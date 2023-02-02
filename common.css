@@ -191,7 +191,7 @@
     }
     footer {
    
-      position:fixed;
+      position:fixed; /*--på stora skärmar vill jag ha footern synlig i botten */
       left:0;
       bottom:0;
       width: 100%;
@@ -206,10 +206,10 @@
 
     footer {
     
+    position: relative; /*--på små skärmar vill jag ha footern i botten så jag kan scrolla ner till den men tar inte upp plats */
     bottom: 0;
     width: 100%;
     clear: both;
-    position: relative;
     background-color: aliceblue;
     color: black;
     text-align: center;
