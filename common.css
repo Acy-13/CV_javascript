@@ -189,8 +189,31 @@
     background-color: #80daa8;
     font-family: "Sofia Sans", sans-serif;
     }
+    footer {
+   
+      position:fixed;
+      left:0;
+      bottom:0;
+      width: 100%;
+      background-color: aliceblue;
+      color: black;
+      text-align: center;
+      
+        
+  }
 
   @media screen and (max-width: 576px) {
+
+    footer {
+    
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    position: relative;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    }
    
     #footer-icons{
       display: flex;
@@ -206,15 +229,3 @@
   }
 
 
-  footer {
-   
-    justify-content: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: aliceblue;
-    color: black;
-    text-align: center;
-    
-      
-}
