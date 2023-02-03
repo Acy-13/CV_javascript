@@ -183,7 +183,7 @@ section p, h2, h3{
   }
   .projects, #myLuck{
     margin:1rem;
-    filter: brightness(92%);
+    filter: brightness(80%);
   }
 
 }
