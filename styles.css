@@ -181,9 +181,9 @@ section p, h2, h3{
   .hero-subtitle{
     font-size: 1.75rem;
   }
-  #myLuck{
+  .projects, #myLuck{
     margin:1rem;
-    filter: brightness(80%);
+    filter: brightness(92%);
   }
 
 }
@@ -206,9 +206,6 @@ section p, h2, h3{
     main{
       filter: brightness(100%);
     }
-    .projects{
-      filter: brightness(100%);
-    }
-   
+  
  
 }
