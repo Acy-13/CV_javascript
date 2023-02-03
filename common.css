@@ -226,5 +226,12 @@
       margin-left: 0;
     }
   }
+  
+  @media only screen and (min-width: 768px){ /*I landscape-läge vill jag ha footern osynlig tills jag scrollar ner*/
+
+    footer{
+      position: relative;
+    }
+  }
 
 

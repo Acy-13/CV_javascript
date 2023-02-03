@@ -1,5 +1,7 @@
 
-//Alert-ruta kommer upp om du trycker på Submit utan att ha fyllt i rätt, men efter att jag lade till required så kommer det aldrig aktiveras. 
+//Alert-ruta kommer upp om du trycker på Submit utan att ha fyllt i rätt, men efter att jag lade till required så kommer det aldrig aktiveras, required är
+//nog bättre ur tillgänglighetsperpektiv. 
+
 function validateForm() {
     const y = document.forms["myForm"]["message", "email"].value;
     if (y === "") {
@@ -7,3 +9,4 @@ function validateForm() {
       return false;
     }
   }
+ 
