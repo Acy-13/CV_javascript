@@ -173,6 +173,21 @@ section p, h2, h3{
   box-shadow:none;
  }
 }
+@media only screen and (min-width: 768px){ /*I landscape-läge vill jag göra ändringar*/
+
+  .hero-title{
+    font-size: 2.5rem;
+  }
+  .hero-subtitle{
+    font-size: 1.75rem;
+  }
+  #myLuck{
+    margin:1rem;
+    filter: brightness(80%);
+  }
+
+}
+
 
   @media only screen and (min-width: 992px) {
     .section-part {
