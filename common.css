@@ -128,9 +128,7 @@
 
 
 
-#author {
-  font-weight: 300;
-}
+
   #footer-icons {
     display: flex;
     justify-content: center;
@@ -206,15 +204,16 @@
 
     footer {
     
-    position: relative; /*--på små skärmar vill jag ha footern i botten så jag kan scrolla ner till den men tar inte upp plats */
+    position: relative; /*--på små skärmar vill jag ha footern i botten så jag kan scrolla ner till den men tar inte upp onödig plats */
     bottom: 0;
     width: 100%;
     clear: both;
     background-color: aliceblue;
     color: black;
     text-align: center;
+
     }
-   
+    
     #footer-icons{
       display: flex;
       flex-direction: column;
