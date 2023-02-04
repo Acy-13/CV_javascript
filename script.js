@@ -2,7 +2,7 @@ const root = document.querySelector(":root");
 const sectionParts = document.querySelectorAll('.section-part')
 
 
-function myFunction() {
+function navbarControl() {
     let x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
@@ -32,7 +32,7 @@ const darkAndLightModeColors = {
   }
 }
 
-//Dark mode-knapp
+//Dark mode-ikon
 function switchMode() {
   
   if(isLightMode)

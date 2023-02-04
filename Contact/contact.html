@@ -30,7 +30,7 @@
                 <a href="contact.html" class="active">Contact</a>
                 <a href="#" id="dark-mode-toggle" onclick="switchMode()"><i class="fa-solid fa-moon"></i></a>
               
-                <a id="hamburger" href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                <a id="hamburger" href="javascript:void(0);" class="icon" onclick="navbarControl()">&#9776;</a>
               </div>
          
         
@@ -41,7 +41,7 @@
     <div id="form-container"><!--Divbehållare för att gruppera element som hör ihop -->
         <h1 id="rubrik">Contact Me!</h1><!--Huvudrubrik, endast en per sida-->
 
-        <!--Kontaktformulär -->
+        <!--Kontaktformulär, lagt till required för nädvändiga fält-->
         
         <form name ="myForm" action="/action_page.php" method="get" onsubmit="validateForm()" method="post">
             <label for="name">Name:</label>
@@ -54,7 +54,7 @@
             <input type="email" id="email" name="Email" required placeholder="Enter a valid email address">
             <input type="submit" value="Submit message">
         </form>
-        <!--För att få avstånd mellan dessa gjorde jag margin-top på Kontakt-->
+    
     </div>
     <div id="kontakt">
         <button

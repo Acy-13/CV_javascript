@@ -1,4 +1,7 @@
-document.getElementById("dateTime").innerText = new Date().toLocaleString();
+/*Datum och tid som uppateras varje sekund.*/
+setInterval(()=> {
+  document.getElementById("dateTime").innerText = new Date().toLocaleString();
+},1000);
 
 /*Test på en eventlistener, då användaren får ett lyckotal när hen trycker på knappen
 Om en paragraf med turnummer redan finns så skrivs texten över med nytt turnummer

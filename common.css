@@ -193,7 +193,6 @@
     }
     footer {
       align-self: flex-end;
-    
       left:0;
       bottom:0;
       width: 100%;
@@ -206,10 +205,10 @@
         
   }
 
+  /*Vill inte ha synlig footer på liten skärm */
   @media screen and (max-width: 576px) {
 
     footer {
-    
     
     bottom: 0;
     width: 100%;
@@ -232,20 +231,9 @@
     }
   }
     
-  /*I landscape-läge vill jag ha footern osynlig tills jag scrollar ner*/
+  /*I landscape-läge vill jag ha footern osynlig tills jag scrollar ner så den inte tar för mycket plats på skärmen, det uppnås med flex på body med 
+  direction column och space between.*/
 
-  @media only screen and (min-width: 768px){ 
-    footer{
-     
-      bottom: 0;
-      width: 100%;
-      clear: both;
-      text-align: center;
-  
-    }
-  
-  }
-  
 
 
 
